@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  font-family: "Arial", sans-serif;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 25%;
+  transform: translateX(-50%);
+  background: black;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 210px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 30px;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: rgb(255, 0, 119);
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  width: 210px;
+  background: black;
+  padding: 15px;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s linear;
+}
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+  height: 300px;
+  transition: height 0.4s linear;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: height 0.4s linear;
+}
+
+.menu ul li a:hover {
+  color: hotpink;
+  font-weight: bold;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 25%;
+  transform: translateX(-50%);
+  background: black;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 230px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 30px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: rgb(255, 0, 119);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
+  background: black;
+  padding: 0 15px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: height 0.4s ease-in-out;
+}
+
+.menu.open {
+  height: 300px; 
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s step-end;
+}
+
+.menu.open ul {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out, visibility 0s step-start;
+}
+
+.menu ul li {
+  padding: 10px 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+  color: hotpink;
+  font-weight: bold;
+} */

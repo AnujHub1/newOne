@@ -1,0 +1,146 @@
+.about-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+#about-heading {
+  box-sizing: border-box;
+  color: rgb(255, 0, 119);
+  display: block;
+  font-family: poppins-bold;
+  font-size: 20px;
+  font-style: normal;
+  font-variant-ligatures: common-ligatures;
+  font-weight: 700;
+}
+
+.about-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.about-container1 h3 {
+  font-size: 2.5rem;
+}
+.about-container2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  gap: 1.2rem;
+  line-height: 1cm;
+}
+
+.about-container2 img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.about-container2 p {
+  width: 80%;
+  font-size: 1.3rem;
+  color: rgb(136, 136, 136);
+}
+
+.about-container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.skills {
+  flex: 1;
+  min-width: 250px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: #333;
+  border-radius: 4px;
+  position: relative;
+}
+
+.progress span {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background: #333;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile,
+  .skills {
+    width: 100%;
+  }
+
+  .progress span {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

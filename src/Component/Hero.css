@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  background: #414141 url("../assets/intro-bg.jpg") no-repeat center
+    bottom/cover fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgb(21, 21, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: -1rem 1rem;
+  color: rgb(110, 110, 110);
+  background-size: cover;
+}
+
+.intro-overlay {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(17, 17, 17);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(110, 110, 110);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+.centerContain {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.centerContain .p-hello {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(255, 0, 119);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.centerContain .p-Name {
+  font-size: 5.7rem;
+  font-weight: bold;
+}
+
+.centerContain .p-role {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: normal;
+  font-family: monospace;
+  margin-bottom: 3rem;
+}
+
+.p-role span {
+  color: rgb(218, 212, 212);
+}
+
+.aboutbtn {
+  text-align: center;
+  border: 3px solid rgba(252, 239, 239, 0.3);
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.aboutbtn img {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
+.aboutbtn:hover {
+  border: 2px solid rgb(255, 0, 119);
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.social-link .social-icon {
+  margin: 0 1rem;
+}
+.social-icon {
+  list-style: none;
+}
+
+.social-icon a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon a:hover {
+  color: rgb(255, 0, 119);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .centerContain .p-hello {
+    font-size: 1.5rem;
+  }
+  .centerContain .p-Name {
+    font-size: 3rem;
+  }
+  .centerContain .p-role {
+    font-size: 1rem;
+  }
+  .aboutbtn {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .social-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .centerContain .p-hello {
+    font-size: 1.2rem;
+  }
+  .centerContain .p-Name {
+    font-size: 2.5rem;
+  }
+  .centerContain .p-role {
+    font-size: 0.9rem;
+  }
+  .aboutbtn {
+    font-size: 0.8rem;
+    padding: 0.7rem 1.2rem;
+  }
+  .social-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .centerContain .p-hello {
+    font-size: 1rem;
+  }
+  .centerContain .p-Name {
+    font-size: 2rem;
+  }
+  .centerContain .p-role {
+    font-size: 0.8rem;
+  }
+  .aboutbtn {
+    font-size: 0.7rem;
+    padding: 0.6rem 1rem;
+  }
+  .social-link {
+    font-size: 1rem;
+  }
+}
