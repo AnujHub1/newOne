@@ -4,6 +4,7 @@ import Hero from "./Component/Hero";
 import Header from "./Component/Header";
 import About from "./Component/About";
 import Timeline from "./Component/Timeline";
+import Portfolio from "./Component/Portfolio";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Timeline />
+      <Portfolio />
     </>
   );
 }
